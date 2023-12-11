@@ -17,15 +17,19 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+
     - name: Setup
       run: npm ci
+
     - name: Testing
-      run: npm test
+      run: npm run test_coverage
+
     - name: Coveralls 
       uses: coverallsapp/github-action@v2.2.3
       with:
