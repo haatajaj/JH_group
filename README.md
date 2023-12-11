@@ -1,5 +1,7 @@
 # Student template
 
+[![Coverage Status](https://coveralls.io/repos/github/haatajaj/JH_group/badge.svg)](https://coveralls.io/github/haatajaj/JH_group)
+
 ## Purpose of this repository
 
 This is a project template for students participating in Software Testing course
