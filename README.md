@@ -1,6 +1,6 @@
 # Student template
 
-[![Coverage Status](https://coveralls.io/repos/github/haatajaj/JH_group/badge.svg)](https://coveralls.io/github/haatajaj/JH_group)
+[![Coverage Status](https://coveralls.io/repos/github/haatajaj/JH_group/badge.svg?branch=main)](https://coveralls.io/github/haatajaj/JH_group?branch=main)
 
 ## Purpose of this repository
 
