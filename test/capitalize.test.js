@@ -82,33 +82,18 @@ describe('Capitalize', () => {
             expect(capitalize([['a','B'],['C','D']])).toBe('A,b,c,d');
         });
 
-        it('That is undefined', () => {
-            expect(capitalize(undefined)).toBe('Undefined');
-        });
-        
-
         it('That is an object', () => {
             expect(capitalize({'a':1})).toBe('[object object]');
             expect(capitalize({'a':{'b':1}})).toBe('[object object]');
+        });
+
+        it('That is undefined', () => {
+            expect(capitalize(undefined)).toBe('Undefined');
         });
 
         it('That is null', () => {
             expect(capitalize(null)).toBe('Null');
 
         });
-
-        it('', () => {
-
-        });
-
-        it('', () => {
-
-        });
-
-        it('', () => {
-
-        });
     });
-
-
 });
