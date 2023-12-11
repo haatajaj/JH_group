@@ -71,29 +71,26 @@ describe('Capitalize', () => {
 
     describe('Other datatype', () => {
         it('That is a number', () => {
-            expect(capitalize(12345)).toBe('12345');
+            expect(capitalize(12345)).toThrow();
         });
 
         it('That is an array', () => {
-            expect(capitalize([])).toBe('');
-            expect(capitalize([1,2])).toBe('1,2');
-            expect(capitalize(['a','b'])).toBe('A,b');
-            expect(capitalize([[1,2],[2,3]])).toBe('1,2,2,3');
-            expect(capitalize([['a','B'],['C','D']])).toBe('A,b,c,d');
+            expect(capitalize([])).toThrow();
+            expect(capitalize([[1,2],[2,3]])).toThrow();
+            expect(capitalize([['a','B'],['C','D']])).toThrow();
         });
 
         it('That is an object', () => {
-            expect(capitalize({'a':1})).toBe('[object object]');
-            expect(capitalize({'a':{'b':1}})).toBe('[object object]');
+            expect(capitalize({'a':1})).toThrow();
+            expect(capitalize({'a':{'b':1}})).toThrow();
         });
 
         it('That is undefined', () => {
-            expect(capitalize(undefined)).toBe('Undefined');
+            expect(capitalize(undefined)).toThrow();
         });
 
         it('That is null', () => {
-            expect(capitalize(null)).toBe('Null');
-
+            expect(capitalize(null)).toThrow();
         });
     });
 });
